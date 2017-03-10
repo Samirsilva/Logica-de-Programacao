@@ -31,7 +31,7 @@ INICIO
   ESCREVAL("A ÁREA DO SEU TRIÂNGULO É: ", AREA)
 FIMALGORITMO
 
-3- Crie um algoritmo que leia dois valores e efetua a troca do conteúdo das variáveis de entrada, exibindo o resultado final.
+//3- Crie um algoritmo que leia dois valores e efetua a troca do conteúdo das variáveis de entrada, exibindo o resultado final.
 
 ALGORITMO “EX3”
 VAR
@@ -51,7 +51,7 @@ INICIO
 ESCREVAL("AGORA O VALOR DE "VALOR 1" É: ", VALOR_1 " E O DE "VALOR 2" É: ", VALOR_2)
 FIMALGORITMO
 
-4- Crie um algoritmo que leia três valores e escreva o valor da média aritmética.
+//4- Crie um algoritmo que leia três valores e escreva o valor da média aritmética.
 
 ALGORITMO “EX4”
 VAR
@@ -72,7 +72,7 @@ INICIO
   ESCREVAL("A MÉDIA DOS  3 VALORES É: ",MEDIA)
 FIMALGORITMO
 
-5- Crie um algoritmo que leia um valor inteiro e exibe seu sucessor e antecessor.
+//5- Crie um algoritmo que leia um valor inteiro e exibe seu sucessor e antecessor.
 
 ALGORITMO “EX5”
 VAR
@@ -90,38 +90,59 @@ ANTECESSOR  := VALORL - 1
   ESCREVAL("O ANTECESSOR DE ", VALOR, " É: ", ANTECESSOR, ".")
 FIMALGORITMO
 
-6- Crie um algoritmo que leia dois números inteiros e exibe o resto e quociente do 1º pelo 2º, ambos os resultados inteiros.
+//6- Crie um algoritmo que leia dois números inteiros e exibe o resto e quociente do 1º pelo 2º, ambos os resultados inteiros.
 
 ALGORITMO “EX6”
 VAR
-N1, N2, RS, Q : INTEIRO
+  NUMERO_1, NUMERO_2, RESTO, QUOCIENTE : INTEIRO
+
 INICIO
-LEIA(N1,N2)
-RS := N1 MOD N2
-Q := N1 DIV N2
-ESCREVAL(RS, Q)
+  
+  ESCREVAL("INFORME O NUMERO 1 INTEIRO: ")
+  LEIA(NUMERO_1) 
+  
+  ESCREVAL("INFORME O NUMERO 2 INTEIRO: ")
+  LEIA(NUMERO_2) 
+
+  RESTO     := NUMERO_1 MOD NUMERO_2
+  QUOCIENTE := NUMERO_1 DIV NUMERO_2
+  
+  ESCREVAL("O RESTO É: ", RESTO)
+  ESCREVAL("O QUOCIENTE É: ", QUOCIENTE)
+
 FIMALGORITMO
 
-7- Crie um algoritmo que receba o saldo de uma aplicação e exibe o novo saldo, considerando o reajuste 1% a mais.
+//7- Crie um algoritmo que receba o saldo de uma aplicação e exibe o novo saldo, considerando o reajuste 1% a mais.
 
 ALGORITMO “EX7”
 VAR
-S, NS : INTEIRO
+  SALDO, NOVO_SALDO : INTEIRO
+
 INICIO
-LEIA(S)
-NS := S + S * 0.01
-ESCREVAL(NS)
+  ESCREVAL("INFORME O SALDO: ")
+  LEIA(SALDO)
+  
+  NOVO_SALDO := SALDO + SALDO * 0.01
+
+  ESCREVAL("O NOVO SALDO COM REAJUSTE DE 1%  É: ", NOVO_SALDO)
 FIMALGORITMO
 
 8- Crie um algoritmo que leia o valor do salário mínimo e o valor do salário de uma pessoa para calcular e exibir quantos salários mínimos ela ganha.
 
 ALGORITMO “EX8”
 VAR
-S, SP, V : REAL
+  SALARIO_MINIMO, SALARIO_DA_PESSOA, QUANTIDADE_DE_SALARIO : REAL
 INICIO
-LEIA(S, SP, V)
-V  := SP/S
-ESCREVAL(V)
+  ESCREVAL("INFORME O VALOR DO SALÁRIO MINIMO ATUAL: ")
+  LEIA(SALARIO_MINIMO)
+  
+  ESCREVAL("INFORME O VALOR DO SALÁRIO QUE VOCÊ RECEBE: ")
+  LEIA(SALARIO_DA_PESSOA)
+  
+  QUANTIDADE_DE_SALARIO  := SALARIO_DA_PESSOA / SALARIO_MINIMO
+
+  ESCREVAL("A QUANTIDADE DE SALARIO MINIMO QUE VOCÊ RECEBE É: ", QUANTIDADE_DE_SALARIO)
+  
 FIMALGORITMO
 
 9- Crie um algoritmo que leia dois números e exiba o quadrado da diferença do primeiro valor pelo segundo e a diferença dos quadrados.
