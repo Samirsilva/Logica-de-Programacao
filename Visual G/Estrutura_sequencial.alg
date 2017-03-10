@@ -1,62 +1,93 @@
-
-1- Crie um algoritmo que leia o lado de um quadrado e exibe a sua área. A área do quadrado = L * L
+//1- Crie um algoritmo que leia o lado de um quadrado e exibe a sua área. A área do quadrado = L * L
 
 ALGORITMO “EX1”
 VAR
-L,H : REAL
+  LADO,ALTURA : REAL
+
 INICIO
-LEIA(L)
-H := L*L
-ESCREVAL(H)
+  ESCREVAL("INFORME O LADO DO QUADRADO:")
+  LEIA(LADO)
+
+  ALTURA := LADO*LADO
+
+  ESCREVAL("A ÁREA DO QUADRADO É: ", ALTURA)
 FIMALGORITMO
 
-2- Crie um algoritmo que leia a altura e a base de um triângulo e exibe a sua área. A área do triângulo = B * H / 2.
+//2- Crie um algoritmo que leia a altura e a base de um triângulo e exibe a sua área. A área do triângulo = B * H / 2.
 
 ALGORITMO “EX2”
+
 VAR
-H,B, A : REAL
+  ALTURA, BASE, AREA : REAL
 
 INICIO
-LEIA(H, B)
-A := B*H
-ESCREVAL(A)
+  ESCREVAL("INFORME A ALTURA:")
+  LEIA(ALTURA)
+  ESCREVAL("INFORME A BASE:")
+  LEIA(BASE)
+  
+  AREA := BASE * ALTURA
+
+  ESCREVAL("A ÁREA DO SEU TRIÂNGULO É: ", AREA)
 FIMALGORITMO
 
 3- Crie um algoritmo que leia dois valores e efetua a troca do conteúdo das variáveis de entrada, exibindo o resultado final.
 
 ALGORITMO “EX3”
 VAR
-VL1, VL2, AUX : INTEIRO
+  VALOR_1, VALOR_2, AUXILIAR : INTEIRO
+  
 INICIO
-LEIA(VL1, VL2)
-AUX := VL1
-VL1 := VL2
-VL2 := AUX
-ESCREVAL(VL1, VL2)
+  ESCREVAL("INFORME O VALOR 1:")
+  LEIA(VALOR_1)
+  
+  ESCREVAL("INFORME O VALOR 2:")
+  LEIA(VALOR_2)
+
+  AUXILIAR := VALOR_1
+  VALOR_1  := VALOR_2
+  VALOR_2  := AUXILIAR
+
+ESCREVAL("AGORA O VALOR DE "VALOR 1" É: ", VALOR_1 " E O DE "VALOR 2" É: ", VALOR_2)
 FIMALGORITMO
 
 4- Crie um algoritmo que leia três valores e escreva o valor da média aritmética.
 
 ALGORITMO “EX4”
 VAR
-VL1,VL2,VL3,M := REAL
-INICIO
-LEIA(VL1, VL2, VL3)
-M := (VL1 + VL2 + VL3)/3
-ESCREVAL(M)
-FIMALGORITMO
+  VALOR_1, VALOR_2, VALOR_3, MEDIA : REAL
 
+INICIO
+  ESCREVAL("INFORME O VALOR 1:")
+  LEIA(VALOR_1)
+  
+  ESCREVAL("INFORME O VALOR 2:")
+  LEIA(VALOR_2)
+  
+  ESCREVAL("INFORME O VALOR 3:")
+  LEIA(VALOR_3)
+
+  MEDIA := (VALOR_1 + VALOR_2 + VALOR_3)/3
+  
+  ESCREVAL("A MÉDIA DOS  3 VALORES É: ",MEDIA)
+FIMALGORITMO
 
 5- Crie um algoritmo que leia um valor inteiro e exibe seu sucessor e antecessor.
 
 ALGORITMO “EX5”
 VAR
-VL, SUC, ANT := INTEIRO
+  VALOR, SUCESSOR, ANTECESSOR := INTEIRO
+
 INICIO
-LEIA(VL)
-SUC := VL + 1
-ANT := VL - 1
-ESCREVAL(SUC, ANT)
+  
+  ESCREVAL("INFORME O VALOR INTEIRO: ")
+  LEIA(VALOR)
+  
+SUCESSOR    := VALOR  + 1
+ANTECESSOR  := VALORL - 1
+
+  ESCREVAL("O SUCESSOR DE ", VALOR, " É: ", SUCESSOR, ".")
+  ESCREVAL("O ANTECESSOR DE ", VALOR, " É: ", ANTECESSOR, ".")
 FIMALGORITMO
 
 6- Crie um algoritmo que leia dois números inteiros e exibe o resto e quociente do 1º pelo 2º, ambos os resultados inteiros.
