@@ -2,202 +2,115 @@
 1- Crie um algoritmo que leia o lado de um quadrado e exibe a sua área. A área do quadrado = L * L
 
 ALGORITMO “EX1”
-	VAR
-		L, A : REAL
+
 INICIO
-	ESCREVA (“DIGITE O LADO: ”)
-	LEIA (L)
-	A := L * L
-	ESCREVAL (“ÁREA: ”, A)
+
 FIMALGORITMO
 
 2- Crie um algoritmo que leia a altura e a base de um triângulo e exibe a sua área. A área do triângulo = B * H / 2.
 
 ALGORITMO “EX2”
-	VAR
-		B, H, A : REAL
+
 INICIO
-	ESCREVAL (“DIGITE A BASE: ”)
-	LEIA (B)
-	ESCREVAL (“DIGITE A ALTURA: ”)
-	LEIA (H)
-	A := B * H / 2
-	ESCREVAL (“ÁREA: ", A)
+
 FIMALGORITMO
 
 3- Crie um algoritmo que leia dois valores e efetua a troca do conteúdo das variáveis de entrada, exibindo o resultado final.
 
 ALGORITMO “EX3”
-	VAR
-		VL1, VL2, AUX : REAL
+
 INICIO
-	ESCREVAL (“DIGITE O 1º VALOR: ”)
-	LEIA (VL1)
-	ESCREVAL (“DIGITE O 2º VALOR: ”)
-	LEIA (VL2)
-	AUX := VL1
-	VL1 := VL2
-	VL2 := AUX
-	ESCREVAL (“1º VALOR: ”, VL1, “2º VALOR: ”, VL2)
+
 FIMALGORITMO
 
 
 4- Crie um algoritmo que leia três valores e escreva o valor da média aritmética.
 
 ALGORITMO “EX4”
-	VAR
-		VL1, VL2, VL3, MD : REAL
+
 INICIO
-	ESCREVAL (“DIGITE O 1º VALOR: ”)
-	LEIA (VL1)
-	ESCREVAL (“DIGITE O 2º VALOR: ”)
-	LEIA (VL2)
-	ESCREVAL (“DIGITE O 3º VALOR: ”)
-	LEIA (VL3)
-	MD := (VL1 + VL2 + VL3) / 3
-	ESCREVAL (“MÉDIA: ”, MD)
+
 FIMALGORITMO
 
 OU
 
 ALGORITMO “EX4”
-	VAR
-		VL1, VL2, VL3, MD : REAL
+
 INICIO
-	ESCREVAL (“DIGITE O 1º, 2º E 3º VALORES: ”)
-	LEIA (VL1, VL2, VL3)
-	MD := (VL1 + VL2 + VL3) / 3
-	ESCREVAL (“MÉDIA: ”, MD)
+
 FIMALGORITMO
 
 5- Crie um algoritmo que leia um valor inteiro e exibe seu sucessor e antecessor.
 
 ALGORITMO “EX5”
-	VAR
-		VL, VLA, VLS : INTEIRO
+
 INICIO
-	ESCREVAL (“DIGITE O VALOR: ”)
-	LEIA (VL)
-	VLA := VL - 1
-	VLS := VL + 1 
-	ESCREVAL (“VALOR ANTECESSOR: ”, VLA, “ VALOR SUCESSOR: ”, VLS)
+
 FIMALGORITMO
 
 6- Crie um algoritmo que leia dois números inteiros e exibe o resto e quociente do 1º pelo 2º, ambos os resultados inteiros.
 
 ALGORITMO “EX6”
-	VAR
-		N1, N2, Q, R : INTEIRO
+
 INICIO
-	ESCREVAL (“DIGITE O 1º NÚMERO: ”)
-	LEIA (N1)
-	ESCREVAL (“DIGITE O 2º NÚMERO: ”)
-	LEIA (N2)
-	Q := N1 DIV N2
-	R := N1 MOD N2
-	ESCREVAL (“QUOCIENTE: ”, Q, “ RESTO: ”, R)
+
 FIMALGORITMO
 
 7- Crie um algoritmo que receba o saldo de uma aplicação e exibe o novo saldo, considerando o reajuste 1% a mais.
 
 ALGORITMO “EX7”
-	VAR
-		SLD, SLDN : REAL
+
 INICIO
-	ESCREVAL (“DIGITE O SALDO: ”)
-	LEIA (SLD)
-	SLDN := SLD + SLD * 0.01
-	ESCREVAL (“SALDO REAJUSTADO: ”, SLDN)
+
 FIMALGORITMO
 
 8- Crie um algoritmo que leia o valor do salário mínimo e o valor do salário de uma pessoa para calcular e exibir quantos salários mínimos ela ganha.
 
 ALGORITMO “EX8”
-	VAR
-		SM, S, QS : REAL
+
 INICIO
-	ESCREVAL (“DIGITE O SALÁRIO MÍNIMO: ”)
-	LEIA (SM)
-	ESCREVAL (“DIGITE O SALÁRIO: ”)
-	LEIA (S)
-	QS := S / SM
-	ESCREVAL (“QUANTIDADE DE SALÁRIOS MÍNIMOS: ”, QS)
+
 FIMALGORITMO
 
 9- Crie um algoritmo que leia dois números e exiba o quadrado da diferença do primeiro valor pelo segundo e a diferença dos quadrados.
 
 ALGORITMO “EX9”
-	VAR
-		N1, N2, R1, R2: REAL
+
 INICIO
-	ESCREVAL (“DIGITE O 1º VALOR: ”)
-	LEIA (N1)
-	ESCREVAL (“DIGITE O 2º VALOR: ”)
-	LEIA (N2)
-	R1 := (N1 – N2)^2
-	R2 := N1^2 – N2^2
-	ESCREVAL (“1º RESULTADO: ”, R1, “ 2º RESULTADO: ”, R2)
+
 FIMALGORITMO
 
 10- Crie um algoritmo que leia um horário qualquer (hora e minuto) e informe quantos minutos se passaram desde o início do dia.
 
 ALGORITMO “EX10”
-	VAR
-		H, M, QM : REAL
+
 INICIO
-	ESCREVAL (“DIGITE A HORA: ”)
-	LEIA (H)
-	ESCREVAL (“DIGITE O MINUTO: ”)
-	LEIA (M)
-	QM := H * 60 + M
-	ESCREVAL (“TOTAL DE MINUTOS: ”, QM)
+
 FIMALGORITMO
 
 11- Crie um algoritmo que leia quatro números e exiba a média ponderada, sabendo-se que os pesos são respectivamente: 1, 2, 3 e 4.
 
 ALGORITMO “EX11”
-	VAR
-		N1, N2, N3, N4, MDP : REAL
+
 INICIO
-	ESCREVAL (“DIGITE O 1º, 2º, 3º E 4º NÚMEROS: ”)
-	LEIA (N1, N2, N3, N4)
-	MDP := (N1 + N2 * 2 + N3 * 3 + N4 * 4) / 10
-	ESCREVAL (“MÉDIA PONDERADA: ”, MDP)
+
 FIMALGORITMO
 
 12- Crie um algoritmo que efetue e exiba o cálculo do salário líquido de um professor. Os dados fornecidos são: valor da hora aula, número de aulas dadas no mês e percentual de desconto do INSS.
 
 ALGORITMO “EX12”
-	VAR
-		VH, NH, INSS, SB, SL, DESC : REAL
+
 INICIO
-	ESCREVAL (“DIGITE O VALOR DA HORA:”)
-	LEIA (VH)
-	ESCREVAL (“DIGITE O NÚMERO DE HORAS: ”)
-	LEIA (NH)
-	ESCREVAL (“DIGITE O PERCENTUAL DO INSS: ”)
-	LEIA (INSS)
-	SB := VH * NH
-	DESC := SB * INSS / 100
-	SL := SB - DESC
-	ESCREVAL (“SALÁRIO LÍQUIDO: ”, SL)
+
 FIMALGORITMO
 
 
 13- Sabendo que 100 quilowatts de energia custa um décimo do salário mínimo fazer um algoritmo que receba o valor do salário mínimo e quantidade quilowatts gasta por uma residência e calcule e imprima: valor em reais de cada quilowatt, valor em reais a ser pago e o novo valor a ser pago por residência com um desconto de 10%.
 
 ALGORITMO “EX13”
-	VAR
-		SM, QKW, VKW, VP, VPD : REAL
+
 INICIO
-	ESCREVAL (“DIGITE O VALOR DO SALÁRIO MÍNIMO: ”)
-	LEIA (SM)
-	ESCREVAL (“DIGITE A QUANTIDADE KW: ”)
-	LEIA (QKW)
-	VKW := SM / 10 / 100
-	VP := QKW * VKW
-	VPD := VP – VP * 0.1
-ESCREVAL (“VALOR DE 1 KW: ”, VKW, “ VALOR PAGO: ”, VP, “ VALOR PAGO C/ DESCONTO: ”, VPD)
+
 FIMALGORITMO
 
 14- Crie um algoritmo que efetue o cálculo da quantidade de litros de combustível gastos em uma viagem, sabendo que o carro faz 12 Km com um litro. Deverão ser fornecidos o tempo gasto na viagem e a velocidade média. O algoritmo deverá apresentar os valores da velocidade média, tempo gasto na viagem, distância percorrida e a quantidade de litros utilizada na viagem. Utilizar as seguintes fórmulas: 
@@ -205,16 +118,9 @@ FIMALGORITMO
 Distância = Tempo x Velocidade
 
 ALGORITMO “EX14”
-	VAR
-		TEMPO, DIST, VM, LITROS: REAL
+
 INICIO
-	ESCREVAL (“DIGITE O TEMPO: ”)
-	LEIA (TEMPO)
-	ESCREVAL (“DIGITE A VELOCIDADE: ”)
-	LEIA (VM)
-	DIST := TEMPO * VM
-	LITROS := DIST /12
-ESCREVAL (“VELOCIDADE MÉDIA: ”, VM, “ TEMPO: ”, TEMPO, “ DISTÂNCIA: ”, DIST, “ LITROS GASTOS:  ”, LITROS)
+
 FIMALGORITMO
 
 
@@ -229,17 +135,9 @@ n = número de meses
 Crie um algoritmo que exiba o valor acumulado.
 
 ALGORITMO “EX15”
-	VAR
-		TAXA, AM, NM, VA : REAL
+
 INICIO
-	ESCREVAL (“DIGITE A TAXA: ”)
-	LEIA (TAXA)
-	ESCREVAL (“DIGITE A APLICAÇÃO MENSAL: ”)
-	LEIA (AM)
-	ESCREVAL (“DIGITE O NÚMERO DE MESES: ”)
-	LEIA (NM)
-	VA :=  AM * (((1 + TAXA)^NM) – 1) / TAXA 
-ESCREVAL (“VALOR ACUMULADO: ”, VA)
+
 FIMALGORITMO
 
 16- Crie um algoritmo que leia a quantidade de fitas que uma locadora de vídeo possui e o valor que ela cobra por aluguel, mostrando as informações pedidas a seguir:
@@ -249,42 +147,23 @@ b) Quando o cliente atrasa a entrega é cobrada uma multa de 10% sobre o valor d
 c) Sabendo ainda que 2% de fitas se estragam ao longo do ano e um décimo do total é comprado para reposição, exiba a quantidade de fitas que a locadora terá no final do ano.
 
 ALGORITMO “EX16”
-	VAR
-		QF, VA, FA, VM, QFF : REAL
+
 INICIO
-	ESCREVAL (“DIGITE A QUANTIDADE DE FITAS: ”)
-	LEIA (QF)
-	ESCREVAL (“DIGITE O VALOR DO ALUGUEL: ”)
-	LEIA (VA)
-	FA := QF / 3 * VA * 12
-	VM := QF /3 / 10 * VA * 0.1
-	QFF := QF + (QF /10) – (QF *0.02)
-ESCREVAL (“FATURAMENTO ANUAL: ”, FA, “VALOR DA MULTA: ”, VM, “QUANTIDADE DE FITA FINAL: ”, QFF)
+
 FIMALGORITMO
 
 17- Crie um algoritmo que leia um número inteiro de três casas e exiba o algarismo da casa das dezenas.
 
 ALGORITMO “EX17”
-	VAR
-		NUM, D : INTEIRO
+
 INICIO
-	ESCREVAL (“DIGITE O NÚMERO: ”)
-	LEIA (NUM)
-	D := NUM DIV 10 MOD 10
-ESCREVAL (“ALGARISMO DA CASA DA DEZENA: ”, D)
+
 FIMALGORITMO
 
 18- Crie um algoritmo que leia um número inteiro de três casas e exibe o seu valor invertido. Ex.: entra com 123 e sai 321.
 
 ALGORITMO “EX18”
-	VAR
-		NUM, C, D, U, NUMI : INTEIRO
+
 INÍCIO
-	ESCREVAL (“DIGITE O NÚMERO: ”)
-	LEIA (NUM)
-	U := NUM MOD 10
-	D := NUM DIV 10 MOD 10
-	C := NUM DIV 100
-	NUMI := U * 100 + D * 10 + C
-ESCREVAL (“NÚMERO INVERTIDO: ”, NUMI)
+
 FIMALGORITMO
