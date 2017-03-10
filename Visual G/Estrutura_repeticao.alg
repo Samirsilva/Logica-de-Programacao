@@ -1,27 +1,130 @@
 1- Criar um algoritmo que imprima a soma de todos os números de 1 até 100. 
+ALGORITMO “EX1”
+VAR
+SOMA, V : INTEIRO
+INICIO
+SOMA = 0
+ PARA X DE 1 ATE 100 FACA
+  SOMA := SOMA + X
+ FIMPARA
+ ESCREVAL(SOMA)
+FIMALGORITMO
  
 2- Criar um algoritmo que entre com cem números e imprima o quadrado de cada número. 
+ALGORITMO “EX2”
+VAR
+NUM, Q : REAL
+X : INTEIRO
+INICIO
+ PARA X DE 1 ATE 100 FACA
+  LEIA(NUM)
+  Q := NUM ^2
+  ESCREVAL(Q)
+ FIMPARA
+FIMALGORITMO 
  
 3- Ler vários números e informar quantos números entre 100 e 200 foram digitados. Quando o valor zero for lido, o algoritmo deverá cessar sua execução. 
- 
+ALGORITMO “EX3”
+VAR
+NUM, CONT ; INTEIRO
+INICIO
+LEIA(NUM)
+ENQUANTO NUM <> 0 FACA
+ SE (NUM >=100) E (NUM <=200) ENTAO
+ CONT := CONT + 1
+ FIMSE
+ LEIA (NUM)
+FIMENQUANTO
+ESCREVAL(CONT)
+FIMALGORITMO
+
 4- Criar um algoritmo que imprima todos os números pares de 1 até 100. 
- 
+ALGORITMO “EX4”
+VAR
+X: INTEIRO
+INICIO
+ PARA X DE 1 ATE 100 FACA
+  SE X MOD 2 = 0 ENTAO
+   ESCREVAL ("PAR; ", X)
+  FIMSE
+ FIMPARA
+FIMALGORITMO
+
 5- Criar um algoritmo que entre com a profissão de várias pessoas e imprima quantos são Programadores. Quando o valor “fim” for lido, o algoritmo deverá cessar sua execução. 
- 
+ALGORITMO “EX5”
+VAR
+PROF : CARACTERE
+CONT : INTEIRO
+INICIO
+LEIA(PROF)
+ENQUANTO PROF <> "FIM" FACA
+ SE PROF = "PROGRAMADOR" ENTAO
+  CONT := CONT + 1
+ FIMSE
+ LEIA(PROF)
+FIMENQUANTO
+ESCREVAL(CONT)
+FIMALGORITMO
+
 6- Criar um algoritmo que entre com o sexo de várias pessoas (M / F) e imprima o total de pessoas do sexo masculino e total de pessoas do sexo feminino. Quando o valor “P” for lido, o algoritmo deverá cessar sua execução. 
- 
+ALGORITMO “EX6”
+VAR
+SEXO : CARACTERE 
+TF, TM : INTEIRO
+INICIO
+LEIA(SEXO)
+ENQUANTO SEXO <> "P" FACA
+  SE SEXO = "M" ENTAO
+   TM : TM + 1
+   SENAO
+   TF := TF + 1
+  FIMSE
+  LEIA(SEXO)
+ FIMENQUANTO
+FIMALGORITMO
+
 7- Criar um algoritmo que entre com o nome, idade e sexo de 200 pessoas (M / F). Imprimir o nome se a pessoa for do sexo masculino e tiver mais de 21 anos. 
- 
+ALGORITMO “EX7”
+VAR
+NOME, SEXO : CARACTERE
+ID, X : INTEIRO
+INICIO
+PARA X DE 1 ATE 200 FACA
+ LEIA(NOME, SEXO, IDADE)
+ SE (SEXO = "M") E 9IDADE > 21) ENTAO
+  ESCREVAL (NOME)
+ FIMSE
+FIMPARA
+FIMALGORITMO
+
 8- Criar um algoritmo que entre com a idade de várias pessoas e imprima: 
 Total de pessoas com menos de 21 anos; 
 Total de pessoas com mais de 50 anos. 
  
 Quando a idade lida for zero encerra a execução. 
- 
+ALGORITMO “EX8”
+VAR
+
+INICIO
+
+FIMALGORITMO
+
 9- Criar um algoritmo que entre com 100 números e imprima a média aritmética desses números. 
- 
+ALGORITMO “EX9”
+VAR
+
+INICIO
+
+FIMALGORITMO
+
 10- Criar um algoritmo que possa ler um conjunto de pedidos de compra e calcule o valor total da compra. Cada pedido é composto pelos seguintes campos: número, preço e quantidade. O algoritmo deverá processar novos pedidos até que o usuário digite zero para número de pedido. 
- 
+ALGORITMO “EX10”
+VAR
+
+INICIO
+
+FIMALGORITMO 
+
 11- Criar um algoritmo que leia vários números e imprima o maior e o menor deles. Quando for lido o valor zero o finaliza o processamento. 
  
 12- Criar um algoritmo que imprima os 20 primeiros termos da série Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21 ... 
