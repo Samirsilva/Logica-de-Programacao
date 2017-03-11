@@ -20,7 +20,7 @@
 
 * 10- [Criar um algoritmo que possa ler um conjunto de pedidos de compra e calcule o valor total da compra. Cada pedido é composto pelos seguintes campos: número, preço e quantidade. O algoritmo deverá processar novos pedidos até que o usuário digite zero para número de pedido.](https://github.com/Samirsilva/Logica-de-Programacao/blob/master/Visual%20G/Logica%20de%20Repeticao/Questoes/questao_10.alg)
 
-* 11- Criar um algoritmo que leia vários números e imprima o maior e o menor deles. Quando for lido o valor zero o finaliza o processamento.](https://github.com/Samirsilva/Logica-de-Programacao/blob/master/Visual%20G/Logica%20de%20Repeticao/Questoes/questao_11.alg)
+* 11- [Criar um algoritmo que leia vários números e imprima o maior e o menor deles. Quando for lido o valor zero o finaliza o processamento.](https://github.com/Samirsilva/Logica-de-Programacao/blob/master/Visual%20G/Logica%20de%20Repeticao/Questoes/questao_11.alg)
 
 * 12- [Criar um algoritmo que imprima os 20 primeiros termos da série Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21 ...](https://github.com/Samirsilva/Logica-de-Programacao/blob/master/Visual%20G/Logica%20de%20Repeticao/Questoes/questao_12.alg)
 
