@@ -1,1 +1,20 @@
+//4- Crie um algoritmo que leia três valores e escreva o valor da média aritmética.
 
+ALGORITMO “EX4”
+VAR
+  VALOR_1, VALOR_2, VALOR_3, MEDIA : REAL
+
+INICIO
+  ESCREVAL("INFORME O VALOR 1:")
+  LEIA(VALOR_1)
+  
+  ESCREVAL("INFORME O VALOR 2:")
+  LEIA(VALOR_2)
+  
+  ESCREVAL("INFORME O VALOR 3:")
+  LEIA(VALOR_3)
+
+  MEDIA := (VALOR_1 + VALOR_2 + VALOR_3)/3
+  
+  ESCREVAL("A MÉDIA DOS  3 VALORES É: ",MEDIA)
+FIMALGORITMO
