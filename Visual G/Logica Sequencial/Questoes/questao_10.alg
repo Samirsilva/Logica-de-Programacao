@@ -1,1 +1,19 @@
+10- Crie um algoritmo que leia um horário qualquer (hora e minuto) e informe quantos minutos se passaram desde o início do dia.
 
+ALGORITMO “EX10”
+
+VAR
+  HORA, MINUTO, QUANTIDADE_DE_MINUTOS : INTEIRO
+
+INICIO
+  
+  ESCREVAL("INFORME A HORA: ")
+  LEIA(HORA)
+  
+  ESCREVAL("INFORME OS MINUTOS: ")
+  LEIA(MINUTO)
+  
+  QUANTIDADE_DE_MINUTOS := HORA * 60 + MINUTO
+
+  ESCREVAL("A QUANTIDADE DE MINUTOS QUE FORAM PASSADOS FOI: ", QUANTIDADE_DE_MINUTOS)
+FIMALGORITMO
