@@ -1,1 +1,20 @@
+9- Crie um algoritmo que leia dois números e exiba o quadrado da diferença do primeiro valor pelo segundo e a diferença dos quadrados.
 
+ALGORITMO “EX9”
+VAR
+  NUMERO_1, NUMERO_2, PRIMEIRO_VALOR, SEGUNDO_VALOR : REAL
+
+INICIO
+
+  ESCREVAL("INFORME O NÚMERO 1: ")
+  LEIA(NUMERO_1)
+  
+  ESCREVAL("INFORME O NÚMERO 2: ")
+  LEIA(NUMERO_2)
+
+  PRIMEIRO_VALOR  := (NUMERO_1 - NUMERO_1)^2
+  SEGUNDO_VALOR   := (NUMERO_1)^2 - (NUMERO_1)^2
+  
+  ESCREVAL("O RESULTADO DO PRIMEIRO VALOR É: ", PRIMEIRO_VALOR)
+  ESCREVAL("O RESULTADO DO SEGUNDO VALOR É: ", SEGUNDO_VALOR)
+FIMALGORITMO
