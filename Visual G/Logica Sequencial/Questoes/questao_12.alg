@@ -1,1 +1,24 @@
+//12- Crie um algoritmo que efetue e exiba o cálculo do salário líquido de um professor. Os dados fornecidos são: valor da hora aula, número de aulas dadas no mês e percentual de desconto do INSS.
 
+ALGORITMO “EX12”
+
+VAR
+  SALARIO_LIQUIDO, VALOR_HORA_AULA, NUMERO_DE_HORAS, INSS, SALARIO_BRUTO, DESCONTO : REAL
+
+INICIO
+  ESCREVAL("INFORME O VALOR DA HORA DE AULAS DADAS: ")
+  LEIA(VALOR_HORA_AULA)
+  
+  ESCREVAL("INFORME O NÚMERO DE HORAS: ")
+  LEIA(NUMERO_DE_HORAS)
+  
+  ESCREVAL("INFORME O DESCONTO DO INSS: ")
+  LEIA(INSS)
+  
+  SALARIO_BRUTO := VALOR_HORA_AULA * NUMERO_DE_HORAS
+  DESCONTO := SALARIO_BRUTO * INSS / 100
+  SALARIO_LIQUIDO := SALARIO_BRUTO - DESCONTO
+  
+  ESCREVAL("O SALARIO LIQUIDO É: ", SALARIO_LIQUIDO, ".")
+
+FIMALGORITMO
