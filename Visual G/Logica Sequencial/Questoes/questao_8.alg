@@ -1,4 +1,4 @@
-8- Crie um algoritmo que leia o valor do salário mínimo e o valor do salário de uma pessoa para calcular e exibir quantos salários mínimos ela ganha.
+//8- Crie um algoritmo que leia o valor do salário mínimo e o valor do salário de uma pessoa para calcular e exibir quantos salários mínimos ela ganha.
 
 ALGORITMO “EX8”
 VAR
