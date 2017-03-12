@@ -1,1 +1,16 @@
+7- Crie um algoritmo que leia dois valores diferentes e determine o maior. 
 
+ALGORITMO "EX7"
+	VAR
+		NUM1, NUM2: REAL
+INICIO
+	ESCREVAL ("DIGITE O NÚMERO1: ")
+LEIA (NUM1)
+	ESCREVAL ("DIGITE O NÚMERO2: ")
+LEIA (NUM2)
+	SE NUM1 > NUM2 ENTAO
+		ESCREVAL ("O MAIOR NÚMERO: ", NUM1)
+	SENAO
+      		ESCREVAL ("O MAIOR NÚMERO: ", NUM2)
+FIMSE
+FIMALGORITMO
