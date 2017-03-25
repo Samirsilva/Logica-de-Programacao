@@ -25,7 +25,7 @@ namespace Sistema
 
             area = lado * lado;
 
-            MessageBox.Show("A area do quadrado é: "+ area);
+            lblResposta.Text = ("A ÁREA DO QUADRADO É: "+ area);
         }
     }
 }
