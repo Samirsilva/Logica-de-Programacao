@@ -1,4 +1,4 @@
-#Questões Sequenciais
+# Questões Sequenciais
 
 * 1- [Crie um algoritmo que leia o lado de um quadrado e exibe a sua área. A área do quadrado = L * L](https://github.com/Samirsilva/Logica-de-Programacao/blob/master/C%23/Logica%20Sequencial/Questoes/questao_1.cs)
 
